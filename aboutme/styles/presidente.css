@@ -1,0 +1,30 @@
+body{
+    background-color: #fca6c9;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+img{
+    width: 40%;
+}
+main{
+    text-align: center;
+}
+h3{
+    color: white;
+}
+h2{
+    color: black;
+}
+.white{
+    color: white;
+}
+footer{
+    text-align: center;
+}
+.cursor{
+    color: white;
+}
+.cursor:hover{
+    color: black ;
+}

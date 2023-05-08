@@ -9,8 +9,9 @@ Fonts are separated by a & */
   /* change the values below to your colors from your palette https://coolors.co/005f73-0a9396-94d2bd-e7d49c */
   --primary-color: #005f73   ;
   --secondary-color: #0a9396 ;
-  --accent2-color: #94d2db;
   --accent1-color: #e7d49c;
+  --accent2-color: #94d2db;
+  
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Bruno Ace", sans-serif;
@@ -37,7 +38,6 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
-  background-color: #94d2db;
 }
 img {
   display: block;

@@ -1,65 +1,63 @@
-#background{
+header {
+    background-color: #005f73;
+    text-align: center;    
+}
+body {
+    background-color: #fcfafb;
+}
+#background {
     height: 725px;    
     background-color: #94d2bd;
 }
-#content{
+#content {
     margin: 0 auto;
-    height: 80%;
-    text-align: left;
+    width: 1600px;
 }
-nav a{
+nav a {
     background-color: #005f73;
     color: white;
-    text-align: left;
     text-decoration: none;
 }
-header{
-    background-color: #005f73;
-    
-}
-body{
-    background-color: #fcfafb;
-}
-nav a:hover{
+nav a:hover {
     background-color: #e7d49c;
     color: #0a9396;
 }
-.book{
+.book {
     text-decoration: none;
     color: black;
 }
-.join{
+.join {
     text-decoration: none;
     color: white;
 }
-.book:hover, .join:hover{
+.book:hover, .join:hover {
     color: white;
     background-color: #94d2bd;
 }
-.msg{    
+.msg {    
     background-color: #005f73;
     color: white;   
 }
-.icon{
+.icon {
     width: 80px;
 }
-.home-grid{
+.home-grid {
     text-align: center;
 }
-#hero-msg{
+#hero-msg {
     text-align: center;
 }
-#hero-img{
+#hero-img {
     width: 100%;
 }
-footer{
+footer {
     background-color: #0a9396;
     color: white;
 }
-footer p{
+footer p {
     font-size: 1.2em;
 }
-footer p a{
+footer p a {
     text-decoration: none;
     color: white;
 }

@@ -8,17 +8,21 @@
 }
 body{
     text-align: center;
+    margin: 0;
 }
 nav{
     background-color: steelblue;
     padding-left: 10px;
+    padding: 25px;
 }
 a{
     color: white;
     margin: 40px;
+    padding: 25px;
 }
 h1{
     color: steelblue;
+    margin: 50px;
 }
 img{
     width: 800px;

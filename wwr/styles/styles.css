@@ -13,6 +13,9 @@ body {
     margin: 0 auto;
     width: 1600px;
 }
+.logo {
+    width: 80px;
+}
 nav a {
     background-color: #005f73;
     color: white;
@@ -23,10 +26,12 @@ nav a:hover {
     color: #0a9396;
 }
 .book {
+    background-color: #94d2bd;
     text-decoration: none;
     color: black;
 }
 .join {
+    background-color: #94d2bd;
     text-decoration: none;
     color: white;
 }
@@ -41,9 +46,7 @@ nav a:hover {
 .icon {
     width: 80px;
 }
-.home-grid {
-    text-align: center;
-}
+
 #hero-msg {
     text-align: center;
 }

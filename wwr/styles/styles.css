@@ -74,6 +74,7 @@ main section img {
 }
 .card-img {
     border: 10px solid #e7d49c;
+    border-radius: 5%;
     text-align: right
 }
 .river-card, .camping-card, .rapids-card  {

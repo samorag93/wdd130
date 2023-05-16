@@ -4,6 +4,13 @@ header {
 }
 body {
     background-color: #fcfafb;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 #background {
     height: 725px;    
@@ -16,10 +23,14 @@ body {
 .logo {
     width: 80px;
 }
+#logo_link {
+    padding-top: 5px;
+}
 nav a {
     background-color: #005f73;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #e7d49c;
@@ -29,24 +40,57 @@ nav a:hover {
     background-color: #94d2bd;
     text-decoration: none;
     color: black;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join {
     background-color: #94d2bd;
     text-decoration: none;
     color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
-    color: white;
+    color: #e7d49c;
     background-color: #94d2bd;
+}
+main section img {
+    box-sizing: border-box;
 }
 .msg {    
     background-color: #005f73;
-    color: white;   
+    color: white;
+    line-height: 1.5em;
+    padding: 35px;
+    
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
-
+.card-img {
+    border: 10px solid #e7d49c;
+    text-align: right
+}
+.river-card, .camping-card, .rapids-card  {
+    margin: 200px 0;
+}
+.home-title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.msg h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.msg p{
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
 #hero-msg {
     text-align: center;
 }
@@ -56,6 +100,8 @@ nav a:hover {
 footer {
     background-color: #0a9396;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     font-size: 1.2em;
@@ -66,4 +112,7 @@ footer p a {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
 }

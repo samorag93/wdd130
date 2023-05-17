@@ -1,6 +1,5 @@
 header {
     background-color: #005f73;
-    text-align: center;    
 }
 body {
     background-color: #fcfafb;
@@ -27,6 +26,7 @@ h2 {
     padding-top: 5px;
 }
 nav a {
+    text-align: center;
     background-color: #005f73;
     color: white;
     text-decoration: none;
@@ -58,6 +58,9 @@ nav a:hover {
     color: #e7d49c;
     background-color: #94d2bd;
 }
+main section{
+    text-align: center;
+}
 main section img {
     box-sizing: border-box;
 }
@@ -77,8 +80,9 @@ main section img {
     border-radius: 5%;
     text-align: right
 }
-.river-card, .camping-card, .rapids-card  {
+.rivers-card, .camping-card, .rapids-card  {
     margin: 200px 0;
+    
 }
 .home-title {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -92,7 +96,7 @@ main section img {
     font-size: 0.8em;
     padding-bottom: 15px;
 }
-#hero-msg {
+#hero-msg, #hero-msg h4 {
     text-align: center;
 }
 #hero-img {
@@ -116,4 +120,7 @@ footer p a:hover {
 }
 footer .social img {
     padding-top: 15px;
+}
+.button-box {
+    text-align: center;
 }

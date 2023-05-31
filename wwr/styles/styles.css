@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 header {
     background-color: #005f73;
     display: grid;
     grid-template-columns: 150px auto;
+    
 }
 nav {
     display: flex;
@@ -23,7 +26,10 @@ nav {
     margin-top: 100px;
 }
 #hero-msg h1, h4{
-    color: white;
+    color: #e7d49c;
+}
+h4 {
+    text-shadow: 2px 2px 1px #000;
 }
 body {
     background-color: #fcfafb;
@@ -147,9 +153,10 @@ main section img {
 }
 
 .home-title {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Rock Salt', cursive;
     font-size: 2em;
     margin-top: 10px;
+    text-shadow: 2px 2px 1px #000;
 }
 .msg h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;

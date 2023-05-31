@@ -170,6 +170,7 @@ main section img {
 }
 #hero-img {
     width: 100%;
+    opacity: .9;
 }
 footer {
     background-color: #0a9396;

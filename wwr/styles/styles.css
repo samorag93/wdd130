@@ -3,8 +3,7 @@
 header {
     background-color: #005f73;
     display: grid;
-    grid-template-columns: 150px auto;
-    
+    grid-template-columns: 150px auto; 
 }
 nav {
     display: flex;

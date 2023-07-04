@@ -19,43 +19,74 @@
                 <a href="aboutus.html">About us</a>
             </nav>
         </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/heropage2.jpg" alt="Couple buying house">
+        <div id="hero2">
+            <div id="hero-box2">
+                <img id="hero-img2" src="images/heropage2.jpg" alt="Couple buying house">
             </div>
-            <section id="hero-msg">
-                <h1 class="home-title">Buy or rent your new house</h1>
-                <h3>Get the keys to your dream home</h3>
-                <h4>Our team of experts have the local knowledge, skills 
+            <section id="hero-msg2">
+                <h1>Buy or rent your new house</h1>
+                <h2>Get the keys to your dream home</h2>
+                <h3>Our team of experts have the local knowledge, skills 
                     and experience to help you through what would otherwise 
                     be a very stressful buying or renting process. From 
                     finding the ideal property and negotiating prices to 
                     mortgage offers and legal paperwork, we'll help you 
                     achieve your goals with ease. Contact us today to get 
-                    started.</h4>
+                    started.</h3>
             </section>
         </div>
         <main class="discover-grid">
             <section class="grid-title">
                 <h1>Find a property</h1>
             </section>
-            <section class="buy">
-                <video class="discover-video" controls autoplay muted>
-                    <source src="images/videodiscover.mp4" type="video/mp4">
-                </video>
+            <!-- slide 1 -->
+            <div class="Slide_buy">
+                <div>
+                    <video class="mySlide1" src="images/videodiscover.mp4" type="video/mp4" controls autoplay muted loop>
+                </div>
+                <div>
+                    <img class="mySlide1" src="images/slide1.jpg" alt="bedroom photo">
+                </div>
+                <div>
+                    <img class="mySlide1" src="images/slide1.2.jpg" alt="bathroom photo">
+                </div>
                 <h2>Buy fisrt home</h2>
-                <a class="button" href="aboutus.html">I want it</a>
-            </section>
-            <section class="rent">
-                <img class="discover-img"  src="images/heropage2.2.jpg" alt="Galery of properties">
+                <a class="button2" href="aboutus.html">I want it</a>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            <!-- slide 2 -->
+            <div class="Slide_rent">
+                <div>
+                    <img class="mySlide2" src="images/heropage2.2.jpg" alt="Galery of properties">
+                </div>
+                <div>
+                    <img class="mySlide2" src="images/slide2.2.jpg" alt="hall room">
+                </div>
+                <div>
+                    <img class="mySlide2" src="images/slide2.jpg" alt="hall room">
+                </div>
                 <h2>Rent your dreams home</h2>
-                <a class="button" href="aboutus.html">I want it</a>
-            </section>
-            <section class="subsidies">
-                <img class="discover-img" src="images/subsides1.png" alt="Information">
+                <a class="button2" href="aboutus.html">I want it</a>
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <!-- slide 3 -->
+            <div class="Slide_subsidies">
+                <div>
+                    <img class="mySlide3" src="images/slide3.jpg" alt="Galery of properties">
+                </div>
+                <div>
+                    <img class="mySlide3" src="images/slide3_2.jpg" alt="hall room">
+                </div>
+                <div>
+                    <img class="mySlide3" src="images/slide3_3.jpg" alt="hall room">
+                </div>
                 <h2>Subsidies</h2>
-                <a class="button" href="aboutus.html">I want it</a>
-            </section>
+                <a class="button2" href="aboutus.html">I want it</a>
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
         </main>
         <footer>
             <p> Domus Seller &copy; 2023 - Moroni Aguilar</p>
@@ -76,5 +107,27 @@
             </div>
         </footer>
     </div>
+    <script>
+        let slideIndex = [1,1,1];
+        let slideId = ["mySlide1", "mySlide2","mySlide3"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
 </body>
 </html>

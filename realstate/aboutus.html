@@ -19,14 +19,14 @@
                 <a href="aboutus.html">About us</a>
             </nav>
         </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/heropage3.jpg" alt="Couple buying house">
+        <div id="hero3">
+            <div id="hero-box3">
+                <img id="hero-img3" src="images/heropage3.jpg" alt="Couple buying house">
             </div>
-            <section id="hero-msg">
+            <section id="hero-msg3">
                 <h1 class="home-title">All about us</h1>
-                <h3>Best in class</h3>
-                <h4>At domus seller, we know the local Madrid real estate 
+                <h2>Best in class</h2>
+                <h3>At domus seller, we know the local Madrid real estate 
                     market better than anyone. After all, we 
                     all want a home of our own! our professional 
                     team has been connecting the right people 
@@ -35,22 +35,25 @@
                     involved in all stages of the property buying 
                     or renting process. Whether you want to buy 
                     or rent a property, we promise to work hard 
-                    to make sure you get the best possible deal</h4>
+                    to make sure you get the best possible deal</h3>
             </section>
         </div>
         <main class="aboutus-grid">
             <section class="info">
                 <h2>Contact</h2>
-                <h4>004 Reina Victoria Street, 3th Floor, Madrid 28982</h4>
-                <h4>moronyag90@domus.seller</h4>
-                <h4>+34 603 71 02 60</h4>
+                <h3>004 Reina Victoria Street, 3th Floor, Madrid 28982</h3>
+                <h3>moronyag90@domus.seller</h3>
+                <h3>+34 603 71 02 60</h3>
+                <button id="myBtn">I'm interesed</button>
             </section>
             <section class="maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d668.6499026569461!2d-3.7683484643607117!3d40.23567634806534!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1687372848832!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
-            <div id="feedback">
-                <form action="/my-handling-form-page" method="post">
+            <!-- <input type="checkbox" id="btn-modal"> -->
+            <div id="myModal" class="container-modal">
+                <form class="content-modal">
                     <ul>
+                        <span class="close">&times;</span>
                       <li>
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="user_name" />
@@ -63,11 +66,22 @@
                         <label for="msg">Message:</label>
                         <textarea id="msg" name="user_message"></textarea>
                       </li>
-                      <li class="button">
-                        <button type="submit">Contact Me</button>
+                      <li class="button-form">
+                        <label for="btn-modal">Contact me</label>
                       </li>
                     </ul>
                 </form>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal2">
+                <div class="content-modal2">
+                    <h2>¡Welcome!</h2>
+                    <p>Thank you for contacting us, we will contact you as soon as possible.</p>
+                    <div class="btn-cerrar">
+                        <label for="btn-modal">Cerrar</label>
+                    </div>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
             </div>
         </main>
         <footer>
@@ -87,5 +101,25 @@
             </div>
         </footer>
     </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        
+
+        var btn = document.getElementById("myBtn");
+        
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
